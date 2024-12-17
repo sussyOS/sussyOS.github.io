@@ -2,6 +2,17 @@ main {
   background-color: white;
 }
 
+h1,
+h2,
+p {
+  font-size: 10cm;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
 nav {
   background-color: white;
 }

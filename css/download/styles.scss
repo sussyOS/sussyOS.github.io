@@ -5,12 +5,23 @@ main{
     background-color: $bg-main;
 }
 
+nav{
+    background-color: $bg-main;
+}
+
+h1,
+h2,
+p{
+    font-size: 10cm;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
 .title{
     border: 10px;
 }
 
-
-nav{
-    background-color: $bg-main;
-}
 

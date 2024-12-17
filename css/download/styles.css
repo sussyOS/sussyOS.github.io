@@ -2,12 +2,23 @@ main {
   background-color: white;
 }
 
-.title {
-  border: 10px;
-}
-
 nav {
   background-color: white;
+}
+
+h1,
+h2,
+p {
+  font-size: 10cm;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.title {
+  border: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */
