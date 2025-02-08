@@ -1,0 +1,35 @@
+main {
+  background-color: white;
+}
+
+nav {
+  background-color: white;
+}
+
+h1,
+h2,
+p {
+  text-align: center;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  margin: auto;
+}
+
+/*# sourceMappingURL=styles.css.map */
