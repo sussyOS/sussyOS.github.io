@@ -31,4 +31,11 @@ a{
 }
 button {
     text-align: center;
+    vertical-align: middle;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: $bg-nav; 
 }

@@ -29,4 +29,11 @@ a {
   text-align: center;
 }
 
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+}
+
 /*# sourceMappingURL=styles.css.map */
