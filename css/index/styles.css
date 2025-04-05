@@ -39,5 +39,8 @@ footer {
   width: 100%;
   background-color: black;
 }
+footer small {
+  color: white;
+}
 
 /*# sourceMappingURL=styles.css.map */
