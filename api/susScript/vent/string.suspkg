@@ -1,0 +1,8 @@
+# stringutils.suspkg
+def reverse(s:str):
+    """Reverses a given string."""
+    return s[::-1]
+
+def toupper(s:str):
+    """Converts a string to uppercase."""
+    return s.upper()

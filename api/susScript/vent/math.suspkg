@@ -1,0 +1,10 @@
+# math.suspkg
+import math
+
+def sqrt(value):
+    """Returns the square root of a number."""
+    return math.sqrt(value)
+
+def pow(a:float,b:float):
+    """Returns the sum of two numbers."""
+    return math.pow(a,b)

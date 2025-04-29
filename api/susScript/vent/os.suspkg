@@ -1,0 +1,10 @@
+# os.suspkg
+import os
+
+def ls(directory):
+    """Lists all files in the given directory."""
+    return os.listdir(directory)
+
+def run(command):
+    """Runs a system command in the shell."""
+    os.system(command)
