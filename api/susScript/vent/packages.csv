@@ -1,0 +1,4 @@
+package-ID,name,URL
+1,"math","https://sussyos.github.io/api/susScript/vent/math.suspkg"
+2,"os","https://sussyos.github.io/api/susScript/vent/os.suspkg"
+3,"string","https://sussyos.github.io/api/susScript/vent/string.suspkg"
