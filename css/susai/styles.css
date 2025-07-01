@@ -1,0 +1,48 @@
+main {
+  background-color: white;
+}
+
+nav {
+  background-color: white;
+}
+
+h1,
+h2,
+p {
+  text-align: center;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  text-align: center;
+  vertical-align: middle;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+}
+
+footer small {
+  color: white;
+}
+
+/*# sourceMappingURL=styles.css.map */
