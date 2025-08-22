@@ -30,8 +30,11 @@ jobs:
 
       - name: Commit and Push Sitemap
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
           git add sitemap.xml
-          git commit -m "Auto-update sitemap"
+          git commit -m "Auto-update sitemap" || echo "No changes to commit"
           git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
