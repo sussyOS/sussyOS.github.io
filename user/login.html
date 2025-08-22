@@ -53,61 +53,6 @@
     <small>&copy; 2025 sussyOS. All rights reserved.</small>
   </footer>
 
-  <script>
-    let auth0 = null;
-
-    const config = {
-      domain: "sussyos-api.eu.auth0.com",
-      client_id: "QvBeEBYMMDrbxXgcsN848vQjAFEjKOWb",
-      redirect_uri: window.location.origin + "/user/login.html"
-    };
-
-    async function configureClient() {
-      const auth0Client = await createAuth0Client({
-          domain: config.domain,
-          client_id: config.client_id,
-          redirect_uri: config.redirect_uri,
-          cacheLocation: 'localstorage', // 💥 This is the fix!
-          useRefreshTokens: true
-        });
-    }
-
-    async function updateUI() {
-      const isAuthenticated = await auth0.isAuthenticated();
-
-      document.getElementById("btn-login").classList.toggle("d-none", isAuthenticated);
-      document.getElementById("btn-logout").classList.toggle("d-none", !isAuthenticated);
-      document.getElementById("user-info").classList.toggle("d-none", !isAuthenticated);
-
-      if (isAuthenticated) {
-        const user = await auth0.getUser();
-        document.getElementById("user-name").textContent = user.name;
-        document.getElementById("user-email").textContent = user.email;
-      }
-    }
-
-    window.onload = async () => {
-      await configureClient();
-
-      if (window.location.search.includes("code=") && window.location.search.includes("state=")) {
-        await auth0.handleRedirectCallback();
-        window.history.replaceState({}, document.title, "/user/login.html");
-      }
-
-      updateUI();
-
-      document.getElementById("btn-login").addEventListener("click", () => {
-        try {
-          auth0.loginWithRedirect();
-        } catch (error) {
-          console.error("Auth0 Login Error: ", error);
-        }
-      });
-
-      document.getElementById("btn-logout").addEventListener("click", () => {
-        auth0.logout({ returnTo: window.location.origin });
-      });
-    };
-  </script>
+  <script src="../js/user/login.js"></script>
 </body>
 </html>
