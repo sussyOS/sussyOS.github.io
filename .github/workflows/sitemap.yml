@@ -1,0 +1,37 @@
+name: Generate Sitemap
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: Generate Sitemap
+        run: |
+          echo '<?xml version="1.0" encoding="UTF-8"?>' > sitemap.xml
+          echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' >> sitemap.xml
+
+          # Add homepage explicitly
+          echo '  <url><loc>https://sussyos.github.io/</loc><priority>1.0</priority></url>' >> sitemap.xml
+
+          # Loop over HTML files in the repo (excluding hidden, 404, index.html handled above)
+          for file in $(find . -name "*.html" ! -path "./.*" ! -name "index.html"); do
+            url="https://sussyos.github.io/${file#./}"
+            echo "  <url><loc>$url</loc><priority>0.7</priority></url>" >> sitemap.xml
+          done
+
+          echo '</urlset>' >> sitemap.xml
+
+      - name: Commit and Push Sitemap
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add sitemap.xml
+          git commit -m "Auto-update sitemap"
+          git push
