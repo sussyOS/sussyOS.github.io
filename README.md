@@ -6,12 +6,6 @@ This is the official GitHub Pages repository for **SusScript**, developed by **S
 
 ---
 
-## 📥 Installer
-The SusScript installer for Windows is available here:  
-[https://sussyos.github.io/api/susScript/install.zip](https://sussyos.github.io/api/susScript/install.zip)
-
----
-
 ## 🛠 Repo Details
 This repository powers the **website for SusScript**, including:
 - Public landing page.
