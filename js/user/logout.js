@@ -1,5 +1,5 @@
 // Call backend logout endpoint
-fetch("https://sussyos.pythonanywhere.com/user/logout", {
+fetch("https://sussyos.pythonanywhere.com/user/logout/", {
     method: "POST",
     credentials: "include"
 })
