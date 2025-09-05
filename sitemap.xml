@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://sussyos.github.io/</loc><priority>1.0</priority></url>
-  <url><loc>https://sussyos.github.io/user/plan.html</loc><priority>0.7</priority></url>
-  <url><loc>https://sussyos.github.io/user/login.html</loc><priority>0.7</priority></url>
   <url><loc>https://sussyos.github.io/user/signup.html</loc><priority>0.7</priority></url>
+  <url><loc>https://sussyos.github.io/user/login.html</loc><priority>0.7</priority></url>
+  <url><loc>https://sussyos.github.io/user/plan.html</loc><priority>0.7</priority></url>
+  <url><loc>https://sussyos.github.io/user/logout.html</loc><priority>0.7</priority></url>
 </urlset>
