@@ -20,9 +20,9 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
         if (response.ok) {
             document.getElementById('loginMessage').style.color = 'green';
             document.getElementById('loginMessage').innerText = "Login successful! Redirecting...";
-            // Redirect to home page
+            // Redirect to dashboard page
             setTimeout(() => {
-                window.location.href = '/';
+                window.location.href = '/dashboard.html';
             }, 1000);
         } else {
             document.getElementById('loginMessage').style.color = 'red';
