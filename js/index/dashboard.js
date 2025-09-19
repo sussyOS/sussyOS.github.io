@@ -15,7 +15,7 @@ fetch("https://sussyos.pythonanywhere.com/user/dashboard/", {
         document.getElementById("dashboardMessage").innerText = data.message;
     } else {
         // Not logged in → redirect to login page
-        window.location.href = "/user/login.html";
+        window.location.href = "https://sussyos.github.io/user/login.html";
     }
 })
 .catch(error => {
