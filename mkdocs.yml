@@ -1,0 +1,8 @@
+site_name: My Project Docs
+site_url: https:/sussyos.github.io/docs/
+
+theme:
+  name: material
+
+nav:
+  - Home: '/docs/index.html'
