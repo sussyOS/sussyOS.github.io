@@ -1,0 +1,30 @@
+# .readthedocs.yaml
+# Read the Docs configuration file for a Jekyll project
+
+version: 2
+
+# We must use a build tool like `mkdocs` or `sphinx`
+# for RTD to build the project. We won't actually use it.
+mkdocs:
+  configuration: mkdocs.yml
+
+# We'll use a pre-build step to install our gems
+build:
+  os: ubuntu-22.04
+  tools:
+    ruby: 3.2
+  jobs:
+    pre_build:
+      - cd docs
+      - gem install bundler
+      - bundle install
+
+# The build command will actually run our Jekyll build
+submodules:
+  include: all
+
+# Tell Read the Docs to serve files from the _site directory
+formats:
+  - htmlzip
+  - pdf
+  - epub
