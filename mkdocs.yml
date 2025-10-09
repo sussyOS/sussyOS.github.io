@@ -1,5 +1,5 @@
 site_name: My Project Docs
-site_url: https:/sussyos.github.io/docs/
+site_url: http:/sussyos.github.io/docs/
 
 theme:
   name: material
