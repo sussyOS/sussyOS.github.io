@@ -10,7 +10,7 @@ mkdocs:
 
 # We'll use a pre-build step to install our gems
 build:
-  os: ubuntu-latest
+  os: ubuntu-22.04
   tools:
     ruby: "3.4"
   jobs:
