@@ -12,7 +12,7 @@ mkdocs:
 build:
   os: ubuntu-22.04
   tools:
-    ruby: 3.2
+    ruby: "3.2"
   jobs:
     pre_build:
       - cd docs
