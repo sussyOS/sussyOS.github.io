@@ -12,18 +12,15 @@ theme:
     text: "Inter"
     code: "Fira Code"
   features:
-    - navigation.expand        # collapsible sections expand by default
-    - navigation.sections      # group by folder structure
-    - navigation.top           # keeps top-level nav always visible
+    - navigation.expand
+    - navigation.sections
+    - navigation.top
 
 nav:
   - Home: index.md
 
-# Source directory for Markdown files
-docs_dir: docs_src
-
-# Output directory for generated HTML (served at /docs/)
-site_dir: docs
+extra_css:
+  - css/extra.css
 
 markdown_extensions:
   - toc:
