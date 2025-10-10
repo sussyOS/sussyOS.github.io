@@ -1,10 +1,8 @@
-site_name: My Project Docs
+site_name: SussyOS Docs
 site_url: https://sussyos.github.io/docs/
-
-
 
 theme:
   name: readthedocs
 
 nav:
-  - Home: '/docs/index.html'
+  - Home: index.md
