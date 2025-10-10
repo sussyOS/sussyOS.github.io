@@ -18,6 +18,12 @@ theme:
 
 nav:
   - Home: index.md
+  - SusScript:
+      - Home: susScript/index.md
+      - Getting Started:
+          - Installation: susScript/getting-started/installation.md
+          - First Steps: susScript/getting-started/first-steps.md
+      - FAQ: susScript/faq.md
 
 extra_css:
   - css/extra.css
