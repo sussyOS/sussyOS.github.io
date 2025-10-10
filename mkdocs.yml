@@ -4,7 +4,17 @@ site_description: Official SussyOS Documentation
 repo_url: https://github.com/sussyos/sussyos.github.io
 
 theme:
-  name: readthedocs
+  name: material
+  palette:
+    primary: indigo
+    accent: indigo
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - navigation.expand        # collapsible sections expand by default
+    - navigation.sections      # group by folder structure
+    - navigation.top           # keeps top-level nav always visible
 
 nav:
   - Home: index.md
