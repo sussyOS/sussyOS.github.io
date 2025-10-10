@@ -4,7 +4,7 @@ site_url: https://sussyos.github.io/docs/
 
 
 theme:
-  name: material
+  name: readthedocs
 
 nav:
   - Home: '/docs/index.html'
