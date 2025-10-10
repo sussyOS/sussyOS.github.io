@@ -1,18 +1,59 @@
+/* Sidebar background */
 .md-sidebar {
-    background-color: #1f2937; /* Dark gray sidebar */
-    color: #f3f4f6; /* Light text */
+    background-color: #1f2937; /* dark gray */
+    color: #f3f4f6; /* light text */
 }
 
-.md-sidebar a {
-    color: #d1d5db; /* Lighter links */
+/* Sidebar links */
+.md-sidebar a.md-nav__link {
+    color: #d1d5db; /* neutral light */
+    font-weight: 500;
+    transition: color 0.2s ease, background 0.2s ease;
 }
 
-.md-sidebar a:hover {
-    color: #3b82f6; /* Bright blue on hover */
+/* Sidebar link hover */
+.md-sidebar a.md-nav__link:hover {
+    color: #3b82f6; /* bright blue */
+    background-color: rgba(255,255,255,0.05);
 }
 
+/* Active page highlight */
+.md-nav__link--active {
+    color: #ffffff !important;
+    font-weight: 700;
+    background-color: rgba(59,130,246,0.2);
+}
+
+/* Collapsible section titles */
 .md-nav__title {
     font-weight: bold;
     text-transform: uppercase;
-    color: #fbbf24; /* Golden section titles */
+    color: #fbbf24; /* golden titles */
+    margin-top: 1rem;
+}
+
+/* Subsections (nested items) */
+.md-nav--nested .md-nav__link {
+    padding-left: 2rem;
+    font-size: 0.95rem;
+}
+
+/* Hover effect for nested links */
+.md-nav--nested .md-nav__link:hover {
+    color: #60a5fa; /* lighter blue on hover */
+}
+
+/* Scrollbar styling (modern feel) */
+.md-sidebar::-webkit-scrollbar {
+    width: 8px;
+}
+.md-sidebar::-webkit-scrollbar-track {
+    background: #1f2937;
+}
+.md-sidebar::-webkit-scrollbar-thumb {
+    background-color: #374151;
+    border-radius: 4px;
+}
+.md-sidebar::-webkit-scrollbar-thumb:hover {
+    background-color: #4b5563;
 }
