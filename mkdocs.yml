@@ -6,11 +6,11 @@ repo_url: https://github.com/sussyos/sussyos.github.io
 theme:
   name: material
   palette:
-    primary: indigo
-    accent: indigo
+    primary: teal
+    accent: amber
   font:
-    text: Roboto
-    code: Roboto Mono
+    text: "Inter"
+    code: "Fira Code"
   features:
     - navigation.expand        # collapsible sections expand by default
     - navigation.sections      # group by folder structure
