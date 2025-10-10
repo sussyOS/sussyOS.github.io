@@ -1,8 +1,24 @@
 site_name: SussyOS Docs
 site_url: https://sussyos.github.io/docs/
+site_description: Official SussyOS Documentation
+repo_url: https://github.com/sussyos/sussyos.github.io
 
 theme:
   name: readthedocs
 
 nav:
   - Home: index.md
+
+# Source directory for Markdown files
+docs_dir: docs_src
+
+# Output directory for generated HTML (served at /docs/)
+site_dir: docs
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - codehilite
+  - footnotes
+  - tables
