@@ -2,6 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://sussyos.github.io/</loc><priority>1.0</priority></url>
   <url><loc>https://sussyos.github.io/dashboard.html</loc><priority>0.7</priority></url>
+  <url><loc>https://sussyos.github.io/docs/search.html</loc><priority>0.7</priority></url>
+  <url><loc>https://sussyos.github.io/docs/404.html</loc><priority>0.7</priority></url>
   <url><loc>https://sussyos.github.io/user/logout.html</loc><priority>0.7</priority></url>
   <url><loc>https://sussyos.github.io/user/login.html</loc><priority>0.7</priority></url>
   <url><loc>https://sussyos.github.io/user/signup.html</loc><priority>0.7</priority></url>
