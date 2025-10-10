@@ -23,9 +23,10 @@ jobs:
         with:
           python-version: '3.13'
 
-      - name: Install MkDocs
+      - name: Install MkDocs & Recources
         run: |
           pip install mkdocs
+          pip install mkdocs-material
 
       - name: Build MkDocs site into /docs
         run: |
