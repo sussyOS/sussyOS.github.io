@@ -3,5 +3,8 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "docs"
+name = "your-project-name"
 version = "0.1.0"
+
+[tool.setuptools]
+package-dir = {"" = "docs_src"}
