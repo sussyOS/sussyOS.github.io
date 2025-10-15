@@ -1,0 +1,143 @@
+{
+  "name": "George’s Proton Showcase",
+  "subtitle": "All official Proton apps in one place",
+  "description": "A curated AltStore PAL showcase featuring official Proton apps. All links lead to Proton’s verified App Store pages.",
+  "iconURL": "https://example.com/icons/source.png",
+  "headerURL": "https://example.com/icons/header.png",
+  "website": "https://proton.me",
+  "fediUsername": "george-proton-showcase",
+  "tintColor": "#6C63FF",
+  "featuredApps": [
+    "ch.protonmail.ios",
+    "ch.protonvpn.ios"
+  ],
+  "apps": [
+    {
+      "name": "Proton Mail",
+      "bundleIdentifier": "ch.protonmail.ios",
+      "developerName": "Proton AG",
+      "subtitle": "Encrypted Email",
+      "localizedDescription": "The world’s most private email service, featuring end-to-end encryption and open-source security.",
+      "iconURL": "https://proton.me/static/protonmail-icon.png",
+      "tintColor": "#6C63FF",
+      "category": "Productivity",
+      "versions": [
+        {
+          "version": "Latest",
+          "buildVersion": "AppStore",
+          "date": "2025-10-15",
+          "localizedDescription": "Available on the App Store.",
+          "downloadURL": "https://apps.apple.com/app/proton-mail-encrypted-email/id979659905",
+          "size": 0,
+          "minOSVersion": "15.0"
+        }
+      ]
+    },
+    {
+      "name": "Proton VPN",
+      "bundleIdentifier": "ch.protonvpn.ios",
+      "developerName": "Proton AG",
+      "subtitle": "Secure & Free VPN",
+      "localizedDescription": "Browse privately and securely with Proton VPN — no-logs, open-source, and Swiss-based.",
+      "iconURL": "https://proton.me/static/protonvpn-icon.png",
+      "tintColor": "#00A878",
+      "category": "Utilities",
+      "versions": [
+        {
+          "version": "Latest",
+          "buildVersion": "AppStore",
+          "date": "2025-10-15",
+          "localizedDescription": "Available on the App Store.",
+          "downloadURL": "https://apps.apple.com/app/proton-vpn-private-secure/id1437005085",
+          "size": 0,
+          "minOSVersion": "15.0"
+        }
+      ]
+    },
+    {
+      "name": "Proton Drive",
+      "bundleIdentifier": "ch.protonmail.drive",
+      "developerName": "Proton AG",
+      "subtitle": "Encrypted Cloud Storage",
+      "localizedDescription": "Securely store and share files with end-to-end encryption and Swiss privacy.",
+      "iconURL": "https://proton.me/static/protondrive-icon.png",
+      "tintColor": "#5B63D2",
+      "category": "Utilities",
+      "versions": [
+        {
+          "version": "Latest",
+          "buildVersion": "AppStore",
+          "date": "2025-10-15",
+          "localizedDescription": "Available on the App Store.",
+          "downloadURL": "https://apps.apple.com/app/proton-drive/id1592169711",
+          "size": 0,
+          "minOSVersion": "15.0"
+        }
+      ]
+    },
+    {
+      "name": "Proton Pass",
+      "bundleIdentifier": "ch.protonmail.pass",
+      "developerName": "Proton AG",
+      "subtitle": "Encrypted Password Manager",
+      "localizedDescription": "Keep your passwords, identities, and notes safe with Proton Pass, built by the Proton security team.",
+      "iconURL": "https://proton.me/static/protonpass-icon.png",
+      "tintColor": "#C95AFD",
+      "category": "Security",
+      "versions": [
+        {
+          "version": "Latest",
+          "buildVersion": "AppStore",
+          "date": "2025-10-15",
+          "localizedDescription": "Available on the App Store.",
+          "downloadURL": "https://apps.apple.com/app/proton-pass-password-manager/id6443490629",
+          "size": 0,
+          "minOSVersion": "15.0"
+        }
+      ]
+    },
+    {
+      "name": "Proton Calendar",
+      "bundleIdentifier": "ch.protonmail.calendar",
+      "developerName": "Proton AG",
+      "subtitle": "Encrypted Calendar",
+      "localizedDescription": "Plan and schedule privately with Proton Calendar — end-to-end encrypted, private by design.",
+      "iconURL": "https://proton.me/static/protoncalendar-icon.png",
+      "tintColor": "#7E57C2",
+      "category": "Productivity",
+      "versions": [
+        {
+          "version": "Latest",
+          "buildVersion": "AppStore",
+          "date": "2025-10-15",
+          "localizedDescription": "Available on the App Store.",
+          "downloadURL": "https://apps.apple.com/app/proton-calendar-private/id1508230417",
+          "size": 0,
+          "minOSVersion": "15.0"
+        }
+      ]
+    },
+    {
+      "name": "Proton Docs",
+      "bundleIdentifier": "ch.protonmail.docs",
+      "developerName": "Proton AG",
+      "subtitle": "Encrypted Document Editor",
+      "localizedDescription": "Collaborate securely on documents in real time with Proton Docs — private, encrypted, and fast.",
+      "iconURL": "https://proton.me/static/protondocs-icon.png",
+      "tintColor": "#42A5F5",
+      "category": "Productivity",
+      "versions": [
+        {
+          "version": "Coming Soon",
+          "buildVersion": "N/A",
+          "date": "2025-10-15",
+          "localizedDescription": "Awaiting official App Store release.",
+          "downloadURL": "https://proton.me/docs",
+          "size": 0,
+          "minOSVersion": "15.0"
+        }
+      ]
+    }
+  ],
+  "news": []
+}
