@@ -7,6 +7,8 @@
   "website": "https://proton.me",
   "fediUsername": "george-proton-showcase",
   "tintColor": "#6C63FF",
+  "marketplaceID": "george.proton.showcase", 
+  "isNotarized": false,
   "featuredApps": [
     "ch.protonmail.ios",
     "ch.protonvpn.ios"
@@ -20,6 +22,7 @@
       "localizedDescription": "The world’s most private email service, featuring end-to-end encryption and open-source security.",
       "iconURL": "https://proton.me/static/protonmail-icon.png",
       "tintColor": "#6C63FF",
+      "notarized": false,
       "category": "Productivity",
       "versions": [
         {
@@ -41,6 +44,7 @@
       "localizedDescription": "Browse privately and securely with Proton VPN — no-logs, open-source, and Swiss-based.",
       "iconURL": "https://proton.me/static/protonvpn-icon.png",
       "tintColor": "#00A878",
+      "notarized": false,
       "category": "Utilities",
       "versions": [
         {
@@ -62,6 +66,7 @@
       "localizedDescription": "Securely store and share files with end-to-end encryption and Swiss privacy.",
       "iconURL": "https://proton.me/static/protondrive-icon.png",
       "tintColor": "#5B63D2",
+      "notarized": false,
       "category": "Utilities",
       "versions": [
         {
@@ -83,6 +88,7 @@
       "localizedDescription": "Keep your passwords, identities, and notes safe with Proton Pass, built by the Proton security team.",
       "iconURL": "https://proton.me/static/protonpass-icon.png",
       "tintColor": "#C95AFD",
+      "notarized": false,
       "category": "Security",
       "versions": [
         {
@@ -104,6 +110,7 @@
       "localizedDescription": "Plan and schedule privately with Proton Calendar — end-to-end encrypted, private by design.",
       "iconURL": "https://proton.me/static/protoncalendar-icon.png",
       "tintColor": "#7E57C2",
+      "notarized": false,
       "category": "Productivity",
       "versions": [
         {
@@ -125,6 +132,7 @@
       "localizedDescription": "Collaborate securely on documents in real time with Proton Docs — private, encrypted, and fast.",
       "iconURL": "https://proton.me/static/protondocs-icon.png",
       "tintColor": "#42A5F5",
+      "notarized": false,
       "category": "Productivity",
       "versions": [
         {
