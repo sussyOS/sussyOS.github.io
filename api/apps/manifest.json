@@ -1,25 +1,15 @@
 {
-  "name": "George's Proton & Microsoft Apps",
+  "name": "George's Proton & Microsoft PWAs (Updated)",
   "short_name": "Proton+MS",
-  "description": "PWA shells that launch official Proton and Microsoft web apps. Use these to add shortcuts to your device. These PWAs do not modify or redistribute app binaries.",
+  "description": "PWA launcher for remaining Proton and Microsoft web apps. Does NOT redistribute binaries.",
   "icons": [
-    {
-      "src": "/icons/icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "/icons/icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    },
     {
       "src": "/icons/outlook-liquid.svg",
       "sizes": "512x512",
       "type": "image/svg+xml"
     }
   ],
-  "start_url": "/open?app=proton-mail",
+  "start_url": "/",
   "scope": "/",
   "display": "standalone",
   "background_color": "#ffffff",
