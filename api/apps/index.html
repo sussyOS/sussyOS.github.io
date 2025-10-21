@@ -1,0 +1,60 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Proton & Microsoft PWA Launcher</title>
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#0078D4">
+<style>
+  body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; margin:0; display:flex; align-items:center; justify-content:center; height:100vh; background:linear-gradient(180deg,#f7fbff,#eef6ff); color:#073042; }
+  .card { width: min(720px,94vw); background:rgba(255,255,255,0.75); border-radius:16px; box-shadow:0 8px 24px rgba(3,21,32,0.08); padding:24px; backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
+  h1{margin:0 0 8px 0;font-size:20px}
+  p{margin:0 0 16px 0;color:#234}
+  .apps{display:flex;flex-wrap:wrap;gap:12px}
+  .app{display:flex;align-items:center;gap:12px;padding:10px 12px;border-radius:10px;background:rgba(255,255,255,0.6);cursor:pointer;border:1px solid rgba(0,0,0,0.04)}
+  .app img{width:48px;height:48px;border-radius:12px}
+</style>
+</head>
+<body>
+  <div class="card">
+    <h1>Proton & Microsoft App Launcher</h1>
+    <p>Tap an icon to open the official web app. Install this PWA to create a home-screen shortcut.</p>
+    <div class="apps" id="apps"></div>
+  </div>
+<script>
+const apps = [
+  {id:'proton-mail', name:'Proton Mail', url:'https://mail.proton.me', icon:'/icons/protonmail.png'},
+  {id:'proton-pass', name:'Proton Pass', url:'https://pass.proton.me', icon:'/icons/protonpass.png'},
+  {id:'proton-drive', name:'Proton Drive', url:'https://drive.proton.me', icon:'/icons/protondrive.png'},
+  {id:'outlook', name:'Microsoft Outlook', url:'https://outlook.office.com', icon:'/icons/outlook-liquid.svg'}
+];
+
+const container = document.getElementById('apps');
+apps.forEach(a => {
+  const el = document.createElement('div');
+  el.className='app';
+  el.onclick = ()=> { window.location.href = a.url; };
+  el.innerHTML = `<img src="${a.icon}" alt="${a.name} logo"><div><strong>${a.name}</strong><div style="font-size:12px;color:#445">opens in same window</div></div>`;
+  container.appendChild(el);
+});
+
+// Handle open redirect (start_url)
+const params = new URLSearchParams(location.search);
+const app = params.get('app');
+if(app){
+  const entry = apps.find(x=>x.id===app);
+  if(entry){
+    // Replace location so the PWA appears to launch the external web-app
+    location.replace(entry.url);
+  }
+}
+
+// register a simple service worker for caching shell and offline page
+if('serviceWorker' in navigator){
+  navigator.serviceWorker.register('/sw.js').catch(()=>{});
+}
+</script>
+</body>
+</html>
