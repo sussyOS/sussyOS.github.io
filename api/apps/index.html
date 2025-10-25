@@ -1,39 +1,10 @@
-
-<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Proton & Microsoft Launcher (Updated)</title>
-<link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#0078D4">
-<style>
-  body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;margin:0;background:#f3f6fb;display:flex;align-items:center;justify-content:center;height:100vh}
-  .grid{width:min(900px,96vw);background:rgba(255,255,255,0.9);border-radius:16px;padding:20px;box-shadow:0 10px 30px rgba(2,6,23,0.08);backdrop-filter: blur(6px)}
-  .title{display:flex;align-items:center;gap:12px}
-  .title img{width:48px;height:48px;border-radius:12px}
-  .apps{display:grid;grid-template-columns: repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-top:16px}
-  .app{display:flex;gap:12px;align-items:center;padding:10px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.65),rgba(255,255,255,0.45));cursor:pointer;border:1px solid rgba(0,0,0,0.04)}
-  .app img{width:56px;height:56px;border-radius:12px;flex:0 0 56px}
-</style>
-</head><body>
-<div class="grid">
-  <div class="title"><img src="/icons/outlook-liquid.svg" alt="logo"><div><h2 style="margin:0">Proton & Microsoft Launcher (Updated)</h2><div style="color:#556">Apps you haven't added yet — tap to open official web apps.</div></div></div>
-  <div class="apps" id="apps"></div>
-</div>
-<script>
-const apps = [
-  {id:'proton-calendar', name:'Proton Calendar', url:'https://calendar.proton.me', icon:'/icons/proton-calendar.svg'},
-  {id:'proton-docs', name:'Proton Docs', url:'https://proton.me/docs', icon:'/icons/proton-docs.svg'},
-  {id:'onedrive', name:'OneDrive', url:'https://onedrive.live.com', icon:'/icons/onedrive.svg'},
-  {id:'word', name:'Word for web', url:'https://office.com/launch/word', icon:'/icons/word.svg'},
-  {id:'excel', name:'Excel for web', url:'https://office.com/launch/excel', icon:'/icons/excel.svg'},
-  {id:'powerpoint', name:'PowerPoint for web', url:'https://office.com/launch/powerpoint', icon:'/icons/ppt.svg'},
-  {id:'teams', name:'Microsoft Teams', url:'https://teams.microsoft.com', icon:'/icons/teams.svg'}
-];
-
-const container = document.getElementById('apps');
-apps.forEach(a=>{
-  const el = document.createElement('div');
-  el.className='app';
-  el.onclick = ()=> window.open(a.url, '_self');
-  el.innerHTML = `<img src="${a.icon}" alt="${a.name}"><div><strong>${a.name}</strong><div style="font-size:13px;color:#667">${a.url.replace(/^https?:\/\//,'')}</div></div>`;
-  container.appendChild(el);
-});
-</script>
-</body></html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ChatGPT</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+  </head>
+  <body>
+    <iframe src="https://chatgpt.com" discription="ChatGPT"></iframe>
+  </body>
+</html>
